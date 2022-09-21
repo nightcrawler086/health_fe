@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import WelcomeItem from './WelcomeItem.vue'
+import OtherResources from './OtherResources.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
@@ -18,6 +19,16 @@ import SupportIcon from './icons/IconSupport.vue'
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
     provides you with all information you need to get started.
   </WelcomeItem>
+
+  <OtherResources>
+    <template #icon>
+      <DocumentationIcon />
+    </template>
+    <template #heading>Training Course</template>
+
+    There is a good <a href="https://www.udemy.com/course/vuejs-2-the-complete-guide/" target="_blank" rel="noopener">udemy course</a>
+    that has 4.8 stars with over 55K ratings!
+  </OtherResources>
 
   <WelcomeItem>
     <template #icon>
